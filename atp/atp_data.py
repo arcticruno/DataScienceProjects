@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 #name directory 
-directory = "C:/Users/onur.seker/workspace/tennis_atp-master/"
+directory = "C:/Users/onur.seker/workspace/atp/tennis_atp_master/"
 
 #create a list with all the csvnames
 variable_list = ["atp_matches_{}.csv".format(date) for date in range(1968,2017+1,1)]
@@ -79,5 +79,5 @@ frames = [atp_matches_1968,atp_matches_1969,
 atp_data_set = pd.concat(frames)
 
 #output the data set as a csv file
-atp_data_set.to_csv("C:/Users/onur.seker/workspace/tennis_atp-master/atp_data_set.csv", encoding = "utf-8")
+atp_data_set.to_csv("C:/Users/onur.seker/workspace/atp/tennis_atp_master/atp_data_set.csv", encoding = "utf-8")
 

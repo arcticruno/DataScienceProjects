@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-atp_data = pd.read_csv("C:/Users/onur.seker/workspace/tennis_atp-master/atp_data_set.csv", low_memory = False)
+atp_data = pd.read_csv("C:/Users/onur.seker/workspace/atp/tennis_atp_master/atp_data_set.csv", low_memory = False)
 
 #remove all data, that has no matchstats
 atp_data = atp_data.dropna(axis = 0, subset = ["w_ace"])
